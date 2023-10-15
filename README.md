@@ -1,29 +1,42 @@
 # README
 
+[how to install](#how-to-install)
 [api usage](#api-usage)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+### how to install
 
-* Ruby version
+#### Linux/Ubuntu
+You need ruby, postgresql, git
+[ruby, rbenv, rails](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-20-04)
+[git](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04)
+[postgresql](https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart)
+clone api source code
+```
+git clone https://github.com/RaptorialThing/rails-json-rest-api.git 
+```
+install gems
+```
+bundle install
+```
+create postgresql database
+```
+rails db:create
+```
+create database tables
+```
+rails db:migrate
+```
+seed, fill tables with mock, test records
+```
+rails db:seed
+```
+Viola! that is it. now you can start server and play with api app
+[api usage](#api-usage)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rails s
+```
 
 ### api usage
 
@@ -76,4 +89,3 @@ response
 }
 
 ```
-
