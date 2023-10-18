@@ -81,7 +81,7 @@ response
 ```
 {
   "id": 1,
-  "username": "nomad",
+  "username": "nomads",
   "password_digest": "password_digest",
   "age": 3,
   "created_at": "2023-10-14T13:26:40.750Z",
