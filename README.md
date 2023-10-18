@@ -34,8 +34,8 @@ authentication
 
 request
 ```
-curl -X GET -d '{"username": "nomad", "password": "nomad"}' 
--H 'Content-type: application/json' 
+curl -X POST -d '{"username": "nomads", "password": "nomads"}' \
+-H 'Content-type: application/json' \
 localhost:3000/login
 ```
 
@@ -44,7 +44,7 @@ response
 {
   "user": {
     "id": 1,
-    "username": "nomad",
+    "username": "nomads",
     "password_digest": "password_diggest",
     "age": 3,
     "created_at": "2023-10-14T13:26:40.750Z",
@@ -59,8 +59,8 @@ check are you logged
 
 request
 ```
-curl -X GET  -H 'Content-type: application/json' 
--H 'Authorization: `bearer sldfj3423.sfsdf.sfksj`' 
+curl -X GET  -H 'Content-type: application/json' \
+-H 'Authorization: `bearer sldfj3423.sfsdf.sfksj`' \
 localhost:3000/auto_login
 ```
 
