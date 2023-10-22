@@ -10,6 +10,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rack-cors'
 gem 'jwt'
 
+gem 'simple_command'
+
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 

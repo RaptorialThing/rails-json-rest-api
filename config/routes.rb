@@ -3,7 +3,16 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  resource :users, only: [:create]
-  post "/login", to: "users#login"
-  get "/auto_login", to: "users#auto_login"
+  # resource :users, only: [:create]
+  # post "/login", to: "users#login"
+  # get "/auto_login", to: "users#auto_login"
+
+  post "register" => "users#register"
+  post "login" => "authentication#login"
+  get "about" => "users#about"
+
+  resources :admins
+  resources :users
+  resources :authors
+
 end
