@@ -109,21 +109,25 @@ about
 
 
 ```
-curl -X GET -H 'Content-type: application/json' -H 'Authorization: `bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTgwNTk2NDcsInJvbGUiOiJndWVzdCJ9.hgjsUvg6KWNmZJBETpyfkwWtwQq8KdGDgwkWzL-4jEE`'  localhost:3000/about
+curl -X GET -H 'Content-type: application/json' -H 'Authorization: `bearer sdfds`'
+ localhost:3000/about
 ```
 
 all authors
 
 ```
-curl -X GET -H 'Content-type: application/json' -H 'Authorization: `bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTgwNjAwMjQsInJvbGUiOiJndWVzdCJ9.tCJ3vC_l888IpumX7Dx4-trbzjhquNBogojcAf8OBnc`'  localhost:3000/authors
+curl -X GET -H 'Content-type: application/json' -H 'Authorization: `bearer sdfsd`'
+ localhost:3000/authors
 ```
 
 create new author or update if already exists
 ```
-curl -X POST -H 'Content-type: application/json' -H 'Authorization: `bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTgwNjAwMjQsInJvbGUiOiJndWVzdCJ9.tCJ3vC_l888IpumX7Dx4-trbzjhquNBogojcAf8OBnc`' -d '{"author_id": "1"}'  localhost:3000/authors
+curl -X POST -H 'Content-type: application/json' -H 'Authorization: `bearer sdfsdd`'
+-d '{"author_id": "1"}'  localhost:3000/authors
 ```
 
 delete author; delete from user_roles table by user_id
 ```
-curl -X DELETE -H 'Content-type: application/json' -H 'Authorization: `bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTgwNjAwMjQsInJvbGUiOiJndWVzdCJ9.tCJ3vC_l888IpumX7Dx4-trbzjhquNBogojcAf8OBnc`' -d '{"author_id": "1"}'  localhost:3000/authors/1
+curl -X DELETE -H 'Content-type: application/json' -H 'Authorization: `bearer sdfsd`'
+-d '{"author_id": "1"}'  localhost:3000/authors/1
 ```
